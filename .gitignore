@@ -1,0 +1,6 @@
+# carpetas y ficheros que ignoramos en Git
+
+target
+/.classpath
+/.project
+/.settings
