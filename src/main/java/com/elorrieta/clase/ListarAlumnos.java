@@ -15,18 +15,17 @@ public class ListarAlumnos {
 		
 			
 			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/clase", "root", "root");
-			String sql = "SELECT id_alumno, nombre, email FROM clase.alumno;";
+			String sql = "SELECT id_alumno, nombre, email FROM clase.alumno ORDER BY id_alumno DESC;";
 			PreparedStatement pst = conexion.prepareStatement(sql);
-			ResultSet rs = pst.executeQuery();
+			ResultSet rs = pst.executeQuery(); // ejecuto como si pulsara el rayo en workbench y recibo unos resultados "rs"
 			while( rs.next() ) {
 				
 				int id = rs.getInt("id_alumno");
 				String nombre = rs.getString("nombre");								
-				System.out.println( id  + "System.out.println(\"------------------------------\"); " + nombre );				
+				System.out.println( id  + " " + nombre );				
 				
 			}// while
 			
-			System.out.println("Esto no lo vais a ver");
 	
 		}catch (Exception e) {
 			
