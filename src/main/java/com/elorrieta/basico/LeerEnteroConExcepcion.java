@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author infauraga
  *
  */
-public class LeerEntero {
+public class LeerEnteroConExcepcion {
 
 	public static void main(String[] args) {
 		System.out.println("dime un numero:");
@@ -18,20 +18,21 @@ public class LeerEntero {
 		// decalramos una variable de tipo entero
 		int numero = 0;
 
-		// leemos por pantalla y lo guaradmos en la variable
 		try {
 			numero = Integer.parseInt(sc.nextLine());
 			System.out.println("El numero es " + numero);
 			
 		}catch (Exception e) {
-
-			System.err.println("Hemos tenido una excepcion " + e.getMessage());
-			e.printStackTrace(); // muestra la traza de la Exception
+			System.out.println("Lo sentimos pero no es un numero correcto, motivo " + e.getMessage());
+			// e.printStackTrace(); // muestra la traza de la excepcion
 			
-		}finally {
+		}finally { // se ejecuta siempre
 			System.out.println("Termina programa");
 			sc.close();
 		}
+		
+
+		
 
 	}
 
