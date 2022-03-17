@@ -15,7 +15,7 @@ public class LeerEnteroConExcepcion {
 
 		Scanner sc = new Scanner(System.in);
 
-		// decalramos una variable de tipo entero
+		// declaramos una variable de tipo entero
 		int numero = 0;
 
 		try {
