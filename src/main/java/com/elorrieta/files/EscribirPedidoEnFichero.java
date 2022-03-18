@@ -27,9 +27,9 @@ public class EscribirPedidoEnFichero {
 		
 		// escribir los pedidos en fichero, mirar documentacion para el TRUE que hace append		
 		BufferedWriter bw = new BufferedWriter(new FileWriter(f, true));
-		bw.write( p1.getId() + " " + p1.getNombre() + " " + p1.getCantidad() + " \n");
-		bw.write( p2.getId() + " " + p2.getNombre() + " " + p2.getCantidad() + " \n");
-		bw.write( p3.getId() + " " + p3.getNombre() + " " + p3.getCantidad() + " \n");		
+		bw.write( p1.getId() + ";" + p1.getNombre() + ";" + p1.getCantidad() + "\n");
+		bw.write( p2.getId() + ";" + p2.getNombre() + ";" + p2.getCantidad() + "\n");
+		bw.write( p3.getId() + ";" + p3.getNombre() + ";" + p3.getCantidad() + "\n");		
 		bw.close();
 		
 		
