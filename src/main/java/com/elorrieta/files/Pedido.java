@@ -1,6 +1,8 @@
 package com.elorrieta.files;
 
-public class Pedido {
+import java.io.Serializable;
+
+public class Pedido implements Serializable {
 
 	private int id;
 	private String nombre;
