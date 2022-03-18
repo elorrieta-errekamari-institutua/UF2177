@@ -63,7 +63,7 @@ public class TryCacht {
 		}
 
 		System.out.println("lol bien hecho, ");
-
+		sc.close();
 	}// main
 
 }
