@@ -52,6 +52,13 @@ public class InsertarAlumno {
 		
 		System.out.println("Termina programa");
 		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 

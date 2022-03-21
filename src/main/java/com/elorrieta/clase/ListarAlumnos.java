@@ -21,8 +21,9 @@ public class ListarAlumnos {
 			while( rs.next() ) {
 				
 				int id = rs.getInt("id_alumno");
-				String nombre = rs.getString("nombre");								
-				System.out.println( id  + " " + nombre );				
+				String nombre = rs.getString("nombre");	
+				String email  = rs.getString("email");
+				System.out.println( id  + " " + nombre + " " + email);				
 				
 			}// while
 			
