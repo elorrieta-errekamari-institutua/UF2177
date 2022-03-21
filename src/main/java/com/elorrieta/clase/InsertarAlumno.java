@@ -6,6 +6,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+/**
+ * Programa para insertar un alumno en la base datos.
+ * El nombre del alumno debe estar comprendido entre 1 y 45 letras
+ * El email puede que este duplicado y lance una Exception, capturar y solucionar error
+ * Comprobar que la contraseña sea de entre 8 y 32.
+ * 
+ * @author infauraga
+ *
+ */
 public class InsertarAlumno {
 
 	public static void main(String[] args) throws SQLException {
