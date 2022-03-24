@@ -19,6 +19,9 @@ public class InsertarAlumno {
 
 	public static void main(String[] args) throws SQLException {
 		
+		
+		//TODO capturar la excepcion del email unico y pedir uno nuevo al usuario
+		
 		// Obtener conexion a bbdd
 		Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/clase", "root", "root");
 		
