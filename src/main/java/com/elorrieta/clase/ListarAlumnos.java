@@ -23,7 +23,7 @@ public class ListarAlumnos {
 				int id = rs.getInt("id_alumno");
 				String nombre = rs.getString("nombre");	
 				String email  = rs.getString("email");
-				System.out.println( id  + " " + nombre + " " + email);				
+				System.out.printf(" %-4s %-25s %s \n", id , nombre, email);				
 				
 			}// while
 			
