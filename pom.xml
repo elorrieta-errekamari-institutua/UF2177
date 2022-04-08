@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.elorrieta</groupId>
-    <artifactId>clase</artifactId>
+    <artifactId>uf2177</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>clase</name>
-    <description>Add project description here</description>
+    <name>uf2177</name>
+    <description>uf2177 Ejercicio con bookstore database</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,11 +1,11 @@
-package com.elorrieta.mapamundi;
+package com.elorrieta.clase;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class ListarContinentes {
+public class ListarLibros {
 
 	public static void main(String[] args) {
 
@@ -14,20 +14,18 @@ public class ListarContinentes {
 		try {
 		
 			
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mapamundi?useSSL=false", "root", "root");
-			String sql = "SELECT continente_id, nombre FROM continente ORDER BY nombre ASC;";
+			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/gravity_books", "root", "root");
+			String sql = "SELECT book_id, title FROM book ORDER BY book_id DESC;";
 			PreparedStatement pst = conexion.prepareStatement(sql);
-			ResultSet rs = pst.executeQuery();
+			ResultSet rs = pst.executeQuery(); // ejecuto como si pulsara el rayo en workbench y recibo unos resultados "rs"
 			while( rs.next() ) {
 				
-				int id = rs.getInt("continente_id");
-				String nombre = rs.getString("nombre");
-						
-				System.out.println( id + " " + nombre);
+				int id = rs.getInt("book_id");
+				String titulo = rs.getString("title");				
+				System.out.printf(" %5s %-25s \n", id , titulo);				
 				
 			}// while
 			
-			System.out.println("Esto no lo vais a ver");
 	
 		}catch (Exception e) {
 			
